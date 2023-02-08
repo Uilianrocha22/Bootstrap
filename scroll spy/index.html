@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .scrollspy {
+        height: 473px;
+        overflow: auto;
+        position: relative;
+        font-size: 25px;
+      }
+    </style>
+
+    <title>Scroll spy</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-3">
+          <nav
+            id="navbar-example3"
+            class="navbar navbar-light bg-light flex-column align-items-stretch p-3"
+          >
+            <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+              <a class="nav-link" href="#item-4">Item 4</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-4-1">Item 4-1</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example3"
+          data-bs-offset="0"
+          tabindex="0"
+          class="col scrollspy"
+        >
+          <h4 id="item-1">Item 1</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+            minima recusandae magni incidunt dignissimos, maiores labore.
+            Dolores ad illum rem excepturi atque fuga doloremque architecto quo,
+            blanditiis, cum debitis optio aliquam sint eius. Neque ab impedit
+            labore reprehenderit eligendi consectetur aperiam repudiandae
+            numquam, ex facilis error, ea doloribus deleniti rem.
+          </p>
+          <h5 id="item-1-1">Item 1-1</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum
+            exercitationem optio eius assumenda, voluptates ducimus eveniet
+            officia voluptatum architecto omnis consequatur magni possimus,
+            debitis deleniti dolorem harum enim? Alias enim laborum,
+            perspiciatis voluptatum debitis, obcaecati dignissimos, nisi
+            adipisci rerum nulla aspernatur dolorem non laboriosam! Quisquam
+            eaque officiis sequi sit.
+          </p>
+          <h5 id="item-1-2">Item 1-2</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            iure soluta adipisci neque pariatur dicta amet dolores culpa
+            dignissimos? Consequuntur consequatur unde eos molestiae ducimus
+            reiciendis placeat ut provident! Nobis, hic. Assumenda laboriosam
+            neque quidem quia ullam eum soluta officiis, non quae nostrum
+            aperiam sunt sed placeat ipsa ea nobis.
+          </p>
+          <h4 id="item-2">Item 2</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            quam earum ipsa ab porro, sed dicta distinctio delectus minus eum
+            vitae adipisci nostrum recusandae illo ipsum velit quisquam quod
+            accusamus optio sequi enim dolorem nisi eius? Iste vero ut facilis
+            dolorum. Sed, voluptas! Neque obcaecati quo ipsa ad possimus
+            voluptate?
+          </p>
+          <h4 id="item-3">Item 3</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            quam earum ipsa ab porro, sed dicta distinctio delectus minus eum
+            vitae adipisci nostrum recusandae illo ipsum velit quisquam quod
+            accusamus optio sequi enim dolorem nisi eius? Iste vero ut facilis
+            dolorum. Sed, voluptas! Neque obcaecati quo ipsa ad possimus
+            voluptate?
+          </p>
+          <h5 id="item-3-1">Item 3-1</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            quam earum ipsa ab porro, sed dicta distinctio delectus minus eum
+            vitae adipisci nostrum recusandae illo ipsum velit quisquam quod
+            accusamus optio sequi enim dolorem nisi eius? Iste vero ut facilis
+            dolorum. Sed, voluptas! Neque obcaecati quo ipsa ad possimus
+            voluptate?
+          </p>
+          <h5 id="item-3-2">Item 3-2</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            quam earum ipsa ab porro, sed dicta distinctio delectus minus eum
+            vitae adipisci nostrum recusandae illo ipsum velit quisquam quod
+            accusamus optio sequi enim dolorem nisi eius? Iste vero ut facilis
+            dolorum. Sed, voluptas! Neque obcaecati quo ipsa ad possimus
+            voluptate?
+          </p>
+          <h4 id="item-4">item 4</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+            eligendi perspiciatis laborum officiis vero maiores sint suscipit
+            architecto nesciunt minima enim blanditiis, qui quo ad reprehenderit
+            sequi corporis velit earum iure. Velit impedit blanditiis qui iste
+            sapiente tenetur iusto tempore sit fugit labore voluptatem ut,
+            recusandae accusantium dolor modi esse.
+          </p>
+          <h5 id="item-4-1">Item 4-1</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            quam earum ipsa ab porro, sed dicta distinctio delectus minus eum
+            vitae adipisci nostrum recusandae illo ipsum velit quisquam quod
+            accusamus optio sequi enim dolorem nisi eius? Iste vero ut facilis
+            dolorum. Sed, voluptas! Neque obcaecati quo ipsa ad possimus
+            voluptate?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- link javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "#navbar-example",
+      });
+    </script>
+  </body>
+</html>

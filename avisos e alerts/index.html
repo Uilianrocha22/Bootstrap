@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avisos e alerts</title>
+  </head>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <body>
+    <div class="container">
+      <div class="alert alert-danger text-center mt-4" role="alert">
+        Voce não tem autorização para entrar nessa pagina!
+      </div>
+      <div id="liveAlertPlaceholder">
+        Qual o seu time do coraçao clique no descubra abaixo!
+      </div>
+      <button type="button" class="btn btn-primary mt-2" id="liveAlertBtn">
+        Descubra
+      </button>
+
+      <div
+        class="alert alert-primary d-flex align-items-center mt-3"
+        role="alert"
+      >
+        <svg
+          class="bi flex-shrink-0 me-2"
+          width="24"
+          height="24"
+          role="img"
+          aria-label="Info:"
+        >
+          <use xlink:href="#info-fill" />
+        </svg>
+        <div>2 An example alert with an icon</div>
+      </div>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those
+        fields below.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+      var alertTrigger = document.getElementById("liveAlertBtn");
+
+      function alert(message, type) {
+        var wrapper = document.createElement("div");
+        wrapper.innerHTML =
+          '<div class="alert alert-' +
+          type +
+          ' alert-dismissible" role="alert">' +
+          message +
+          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+
+        alertPlaceholder.append(wrapper);
+      }
+
+      if (alertTrigger) {
+        alertTrigger.addEventListener("click", function () {
+          alert("Sociedade esportiva palmeiras", "success");
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  background-color: rgba(0, 0, 139, 0.723);
+  color: white;
+
+  .form-text {
+    color: white;
+  }
+  .inp-eml {
+    color: black;
+  }
+  .inp-snh {
+    color: black;
+  }
+  #exampleInputEmail1 {
+    background-color: blue;
+    border: none;
+  }
+  #exampleInputPassword1 {
+    background-color: red;
+  }
+  .btn-primary {
+    background-color: black;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: white;
+      color: blue;
+      transition: 0.8s;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      body {
+        background-color: darkblue;
+        color: white;
+        font-size: 40px;
+      }
+      .container {
+        min-height: 100vh;
+      }
+    </style>
+    <title>Animação de texto</title>
+  </head>
+  <body>
+    <div data-aos="fade-up" class="container">
+      <p>hello, world!</p>
+    </div>
+    <div data-aos="fade-up-right" data-aos-duration="3000" class="container">
+      <p>hello, world! salve do palestra</p>
+    </div>
+    <div data-aos="flip-right" data-aos-duration="2000" class="container">
+      <p>hello, world! salve do palestra</p>
+    </div>
+    <!-- script animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
